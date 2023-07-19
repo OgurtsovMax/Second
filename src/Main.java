@@ -1,27 +1,27 @@
 public class Main {
     public static void main(String[] args) {
+        int balance = 0;
+
+        int bonus = 0;
+
         int account = 100;
 
-        int sum = 2000;
+        int sum = 1200;
 
 
-        int bonus = sum / 100;
-
-        int balance = 0;
-        balance = account + sum;
-
-        if (sum > 1000) {
+        if (sum >= 1000) {
 
             bonus = sum / 100;
 
         } else {
-            boolean b = sum < 1000;
-
             bonus = 0;
-
         }
-        System.out.println("Баланс " + balance);
+
+        balance = sum + account + bonus;
+
+
         System.out.println("Бонус " + bonus);
+        System.out.println("Баланс " + balance);
 
 
     }
